@@ -3,15 +3,13 @@ body{
     font-family: inter;
 }
 aside{
-    /* display:inline-flexbox; */
     line-height: 48px;
     float: left;
     overflow-y:scroll;
     position: fixed;
-    /* overflow-x: hidden; */
     height: 94vh;
     width: 24vw;
-    /* margin-top: 0; */
+
 }
 aside li{
     list-style: none;
@@ -250,7 +248,6 @@ article:hover{
 
 .navbar{
     width: 26vw;
-    /* background-color: aqua; */
     margin-left: 75%;
     margin-top: -232%;
     /* border: 1px solid black; */
@@ -342,10 +339,13 @@ article:hover{
     color: rgb(29,155,240) ;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: rgb(193, 223, 213);
+    }
     aside{
         width: 30vw;
-        margin-left: -2%;
+        margin-left: -4%;
     }
     .for-you{
         gap: 3rem;
@@ -372,21 +372,85 @@ article:hover{
         margin-top: -250%;
         width: 35vw;
         font-size: 12px;
-        margin-left: 25%;
+        margin-left: 23%;
     }
     .after-article{
-        margin-left: 25%;
+        margin-left: 23%;
         width: 35vw;
-        font-size: 12px;
+        font-size: 11px;
     }
     .u-circle1{
-        width: 3rem;
+        width: 2.5rem;
         height: 4rem;
     }
     
     .navbar{
         width: 26vw;
         margin-top: -400%;
+        font-size: 12px;
+    }
+    .navbar input{
+        font-size: 12px;
+        margin-left: -4%;
+        margin-top: -20%;
+    }
+    .navbar i{
+        font-size: 20px;
+        margin-left: -2%;
+        margin-top: -13%;
+    }
+    
+}
+@media only screen and (max-width: 720px) {
+    body{
+        background-color: rgb(99, 199, 166);
+    }
+    aside{
+        width: 30vw;
+        margin-left: -4%;
+    }
+    .for-you{
+        gap: 3rem;
+        margin-top: 2%;
+        margin-left: 4%;
+        font-size: 12px;
+    }
+    .u-circle{
+        margin-left: -4%;
+        margin-top: 8%;   
+    }
+    .icontweet{
+        margin-left: -18%;
+    }
+    .tweet2{
+        width: 7vw;
+        font-size: 13px;
+    }
+    .after-main>input{
+        font-size: 20px;
+        width: 35vw;
+    }
+
+    article{
+        margin-top: -210%;
+        width: 35vw;
+        font-size: 12px;
+        margin-left: 23%;
+    }
+    .after-article{
+        margin-left: 23%;
+        width: 35vw;
+        font-size: 11px;
+    }
+    .u-circle1{
+        width: 2.5rem;
+        height: 4rem;
+    }
+    
+    .navbar{
+        width: 26vw;
+        top: 0;
+        margin-top: -330%;
         font-size: 12px;
     }
     .navbar input{
