@@ -52,6 +52,8 @@ aside .tweet{
     background-color: rgba(29, 156, 240, 0.877);
 }
 .ucircle{
+    display:block;
+    align-items: center;
     width: 2.5rem;
     max-width: 2.5rem;
     height: 2.5rem;
@@ -84,7 +86,7 @@ main{
     margin-left: 25%;
     border: 1px solid rgb(245, 238, 238);
     background-color:rgba(255, 255, 255, 0.856)
-}
+}   
 main a{
     text-decoration: none;
     color: rgb(83,100,113);
@@ -117,8 +119,10 @@ main a{
     margin-top: 19%;
 }
 .u-circle{
-    width: 2.5rem;
-    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
     border-radius: 30px;
     background-color:rgb(141,110,99);
     color: white;
@@ -205,16 +209,29 @@ main a{
     display: flex;
     flex-direction: column;
     gap: 15rem;
+    font-size: 10px;
     padding-left: 7%;
     height: 150vh;
-    width: 3vw;
+    width: 5vw;
     /* border: 1px solid black; */
+}
+.u-circle1{
+    display: flex;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    background-color:rgb(141,110,99);
+    color: white;
+    margin-left: -5%;
+    margin-top: -5%;
+    
 }
 article{
     width: 38vw;
     margin-top: -152%;
     margin-left: 16%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     cursor: pointer;
 }
 article:hover{
@@ -224,7 +241,7 @@ article:hover{
     width: 38vw;
     margin-top: 5%;
     margin-left: 16%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     cursor: pointer;
 }
 .after-article:hover{
@@ -287,6 +304,16 @@ article:hover{
 .navbar .placeholder{
     margin-right: -15%;
 }
+.get-verified{
+    width: 8vw;
+    padding: 2%;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    cursor: pointer;
+    margin-bottom: 1%;
+}
 .trends-for{
     margin-top: 20%;
 }
@@ -296,9 +323,85 @@ article:hover{
     border-radius: 10px;
     padding-left: 3%;
     margin: -3%;
+    cursor: pointer;
+}
+.navbar>div:hover{
+    background-color: rgba(246, 246, 246, 0.555);
 }
 .navbar span a{
     text-decoration: none;
 
 }
+.show-more{
+    height: 7vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
+}
+.show-more a{
+    color: rgb(29,155,240) ;
+}
+
+@media only screen and (max-width: 600px) {
+    aside{
+        width: 30vw;
+        margin-left: -2%;
+    }
+    .for-you{
+        gap: 3rem;
+        margin-left: 4%;
+        font-size: 12px;
+    }
+    .u-circle{
+        margin-left: -4%;
+        margin-top: 8%;   
+    }
+    .icontweet{
+        margin-left: -18%;
+    }
+    .tweet2{
+        width: 7vw;
+        font-size: 13px;
+    }
+    .after-main>input{
+        font-size: 20px;
+        width: 35vw;
+    }
+    .bar{
+
+    }
+    article{
+        margin-top: -250%;
+        width: 35vw;
+        font-size: 12px;
+        margin-left: 25%;
+    }
+    .after-article{
+        margin-left: 25%;
+        width: 35vw;
+        font-size: 12px;
+    }
+    .u-circle1{
+        width: 3rem;
+        height: 4rem;
+    }
+    
+    .navbar{
+        width: 26vw;
+        margin-top: -400%;
+        font-size: 12px;
+    }
+    .navbar input{
+        font-size: 12px;
+        margin-left: -4%;
+        margin-top: -20%;
+    }
+    .navbar i{
+        font-size: 20px;
+        margin-left: -2%;
+        margin-top: -13%;
+    }
+    
+    
+    
+}
