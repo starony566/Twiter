@@ -342,7 +342,7 @@ article:hover{
     color: rgb(29,155,240) ;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     aside{
         width: 30vw;
         margin-left: -2%;
